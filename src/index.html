@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Basic HTML/Tailwind starter</title>
-    <meta name="description" content="Basic HTML/Tailwind starter" />
-    <meta name="author" content="Daily Dev Tips" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="w-full h-screen">
-    <div class="flex flex-row h-5/6">
-        <div class="basis-1/3 bg-repeat heropattern-tinycheckers-gray-100">
-          <div class="flex flex-col h-full">
-            <p>TEST</p> 
-            <p>TEST2</p>  
-          </div>
-        </div>
-        <div class="basis-2/3 bg-repeat heropattern-tinycheckers-gray-100">
-                <div class="flex-col h-full">
-                    <div class="h-4/6">02</div>
-                    <div class="h-2/6 border-t-4 border-indigo-500">
-                        <p class="pl-5 pt-5 pr-80">
-                            Web4 enabled media & entertainment studios on a mission to redefine how content is created and consumed. We are a team of artists, hustlers, hackers, weirdos, question seekers and change makers building cool shit together for the community.                            
-                        </p>    
 
-                    </div>                    
-                </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Basic HTML/Tailwind starter</title>
+  <meta name="description" content="Basic HTML/Tailwind starter" />
+  <meta name="author" content="Daily Dev Tips" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./bg.css" />
+</head>
+
+<body class="w-full h-screen">
+  <div class="flex flex-row h-5/6">
+    <div class="basis-1/3 bg-repeat">
+      <div class="flex flex-col h-full justify-center items-center">
+        <!-- <p>TEST</p>
+        <p>TEST2</p> -->
+        <img class="h-96" src="./BR.svg" alt="BR">
+        <div>
+          <h1 class="text-[52px]">BLACK</h1>
+          <h1 class="text-[52px] -mt-8">RABBIT</h1>
         </div>
-        
+      </div>
     </div>
-    <footer class="relative bg-gray-100 pt-23 pb-36 text-lg">
-      * COMING SOON * COMING SOON * COMING SOON
-    </footer>
-  </body>
-  <script>
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("block");
-    }
-  </script>
+    <div class="basis-2/3 bg-repeat">
+      <div class="flex-col h-full">
+        <div class="h-4/6">02</div>
+        <div class="h-2/6 border-t-4 border-whtie-500">
+          <p class="text-[20px] pl-5 pt-5 pr-5 md:pr-80">
+            Web4 enabled media & entertainment studios on a mission to redefine how content is created and consumed. We
+            are a team of artists, hustlers, hackers, weirdos, question seekers and change makers building cool shit
+            together for the community.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <footer class="relative bg-gray-100 pt-23 pb-36 text-lg">
+    * COMING SOON * COMING SOON * COMING SOON
+  </footer> -->
+</body>
+<script>
+  function toggleNavbar(collapseID) {
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle("block");
+  }
+</script>
+
 </html>
